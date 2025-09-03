@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>New U Med Spa — Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#">New U Med Spa</a>
+      <nav class="nav">
+        <a href="#services">Treatments</a>
+        <a href="#beforeafter">Before & After</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="call-btn" href="tel:+14078532676">(407) 853-2676</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>Your Destination for Aesthetics & Wellness</h1>
+          <p>Board-certified specialists — injectables, facials, body contouring & hair restoration.</p>
+          <div class="hero-cta">
+            <a class="btn" href="#contact">Book Appointment</a>
+            <a class="btn ghost" href="#services">See Treatments</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="images/pic1.webp" alt="Med spa" />
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <div class="container">
+        <h2>Our Treatments</h2>
+        <p class="lead">Cosmetic injectables, facial rejuvenation, body enhancement, hair restoration.</p>
+        <div class="grid services-grid">
+          <article class="card">
+            <h3>Botox & Fillers</h3>
+            <p>Safe, effective wrinkle reduction and volume restoration.</p>
+          </article>
+          <article class="card">
+            <h3>PRP & PRF Facials</h3>
+            <p>Natural regeneration with platelet-rich plasma.</p>
+          </article>
+          <article class="card">
+            <h3>Body Contouring</h3>
+            <p>Non-surgical fat reduction and sculpting treatments.</p>
+          </article>
+          <article class="card">
+            <h3>Hair Restoration</h3>
+            <p>Advanced grafting and PRF-based hair regrowth options.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="beforeafter" class="section before-after">
+      <div class="container">
+        <h2>Before & After</h2>
+        <div class="ba-grid">
+          <figure><img src="images/pic2.webp" alt="before"><figcaption>Before</figcaption></figure>
+          <figure><img src="images/pic3.webp" alt="after"><figcaption>After</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="reviews" class="section reviews">
+      <div class="container">
+        <h2>What Patients Say</h2>
+        <div class="review-list">
+          <blockquote class="review">
+            <p>"Amazing results — highly professional." </p>
+            <footer>— Courtney H</footer>
+          </blockquote>
+          <blockquote class="review">
+            <p>"Friendly staff and great care."</p>
+            <footer>— Marcella V</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container contact-inner">
+        <div class="contact-form">
+          <h2>Contact & Book</h2>
+          <form id="contactForm" action="#" method="post">
+            <label>Name<input type="text" name="name" required></label>
+            <label>Email<input type="email" name="email" required></label>
+            <label>Phone<input type="tel" name="phone"></label>
+            <label>Message<textarea name="message" rows="4"></textarea></label>
+            <button class="btn" type="submit">Send Message</button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <h3>Clinic Info</h3>
+          <p>7300 Sand Lake Commons Blvd Ste 227 A<br>Orlando, FL 32819</p>
+          <p><strong>Phone:</strong> (407) 853-2676</p>
+          <p><strong>Hours:</strong> Mon–Sat 9:00–6:00</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> New U Med Spa — Demo site. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // small script: update year and basic form handler
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert('Thank you — form submitted (demo). Replace handler with your backend.');
+    });
+  </script>
+</body>
+</html>
